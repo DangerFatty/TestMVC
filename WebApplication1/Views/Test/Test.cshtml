@@ -1,0 +1,20 @@
+﻿@model  WebApplication1.Models.Test
+
+@{
+    ViewBag.Title = "Test";
+}
+
+<h2>Test</h2>
+
+@using (Html.BeginForm())
+{
+    <p>學號:</p>@Html.TextBoxFor(t => t.StudId)
+    <p>姓名:</p>@Html.TextBoxFor(t => t.Name)
+    <p>性別:</p>@Html.TextBoxFor(t => t.Sex)
+    <p>生日:</p>@Html.TextBoxFor(t => t.Birthday)
+    <p>年齡:</p>@Html.TextBoxFor(t => t.Age)
+}
+
+
+
+
