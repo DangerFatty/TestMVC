@@ -1,6 +1,7 @@
 ﻿@model  WebApplication1.Models.Test
 
 @{
+
     ViewBag.Title = "Test";
 }
 
@@ -13,7 +14,14 @@
     <p>性別:</p>@Html.TextBoxFor(t => t.Sex)
     <p>生日:</p>@Html.TextBoxFor(t => t.Birthday)
     <p>年齡:</p>@Html.TextBoxFor(t => t.Age)
+    <p>身高:</p>@Html.TextBoxFor(t => t.Height)
+    <p>體重:</p>@Html.TextBoxFor(t => t.Weight)
+
+    <input type="submit" value="提交" /><br />
+    <span>BMI:</span> @Html.DisplayFor(t => t.BMI)
+
 }
+
 
 
 
