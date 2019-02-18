@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#btn").click( function() {
+                //alert("btn");
+                $.getJSON("https://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=f6bb8bb9-c5b6-4851-a837-695d202d4ccb", function (data) {
+                    alert(data.result.results[0].SBMNAME);
+                });
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <input type="button" value="取得資料" id="btn">
+</body>
+</html>
